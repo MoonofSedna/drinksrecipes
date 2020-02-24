@@ -1,13 +1,119 @@
+
 body {
+  background-image: url(./img/img-3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-color: #eeeeee;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  color: white;
+  padding: 2rem 0;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 5rem;
+  background: transparent! important;
+  color: #1d6006! important;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.Modals{
+  overflow-y: scroll;
+  height: auto;
+}
+
+.Modals::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+.Modals::-webkit-scrollbar-thumb {
+  background: #80da62;
+  border-radius: 4px;
+}
+
+.Modals::-webkit-scrollbar-thumb:hover {
+  background: #67b34e;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background: transparent! important;
+  color: #1d6006! important;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif; 
+  }
+.img-header{
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-header{
+      display: block;
+      margin: auto;
+      width: 60%;
+    }
+    body{
+      background-image: none;
+      background: rgb(212, 252, 103);
+      background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgb(127, 241, 45) 78%, rgb(120, 248, 41) 89%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,255,82,1)), color-stop(78%, rgba(125,235,44,1)), color-stop(89%, rgba(113,232,39,1)));
+    }
+    .card{
+
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+
+.btn{
+  background-color: #efe81a;
+  color:#4ba85f;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #4ba85f;
+  color:#efe81a;
+}
+
+legend{
+  color:#3f3f3f;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.card{
+  background-color: #ffffffb2;
+  border: solid 1.5px #9acea5! important;
+}
+
+.card-header{
+  text-align: center;
+  padding: 1rem;
+  height: 20%;
+}
+
+.error{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(189, 49, 49);
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
